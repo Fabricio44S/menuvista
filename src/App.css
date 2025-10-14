@@ -1,0 +1,14 @@
+#root { max-width: 1280px; margin: 0 auto; padding: 2rem; text-align: center; }
+
+/* Reset del template de Vite */
+html, body, #root { height: 100%; }
+body { margin: 0; background: #1f1f1f; }
+
+#root {
+  max-width: none;   /* <- quita el encajonamiento */
+  padding: 0;        /* <- sin padding global */
+  text-align: left;  /* opcional */
+}
+
+/* (opcional) quita estilos heredados del template */
+.logo, .card, .read-the-docs { all: unset; }
