@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import MainMenu from "./pages/Mainmenu";
+import MainMenu from "./pages/MainMenu";
 
 function App() {
   return (

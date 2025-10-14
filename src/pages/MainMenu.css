@@ -1,32 +1,35 @@
-.menu-container {
+.menu-container{
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh;       /* pantalla completa */
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.menu-banner {
+.banner-img{
   position: absolute;
-  inset: 0;
-  background-color: #000;
-}
-
-.banner-img {
+  inset: 0;            /* top:0 right:0 bottom:0 left:0 */
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  filter: brightness(0.6);
+  object-fit: cover;   /* que llene sin deformarse */
+  filter: brightness(.72);
 }
 
-.menu-title {
+.menu-title{
   position: absolute;
   top: 8%;
-  left: 5%;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 3rem;
+  left: 6%;
+  margin: 0;
+  font-size: clamp(36px, 6vw, 72px);
   color: #ff8c00;
-  text-shadow: 4px 4px 0 #000;
+  text-shadow: 0 3px 0 #000, 0 8px 18px rgba(0,0,0,.5);
+  font-family: 'Press Start 2P', monospace;
+}
+
+.menu-buttons{
+  position: absolute;
+  right: 6%;
+  top: 38%;
+  display: grid;
+  gap: 14px;
+  width: min(360px, 92vw);
 }
